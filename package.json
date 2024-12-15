@@ -5,21 +5,36 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "pankaj sharma",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-react": "^7.26.3",
+    "@chromatic-com/storybook": "^3.2.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-terser": "^0.4.4",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
     "babel-core": "^6.26.3",
     "babel-loader": "^9.2.1",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^4.28.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "storybook": "^8.4.7"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.13"
   }
 }
